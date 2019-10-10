@@ -171,7 +171,28 @@
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="GigFormViewModel.cs" />
+    <Compile Include="Migrations\201909282058262_InitialModel.cs" />
+    <Compile Include="Migrations\201909282058262_InitialModel.Designer.cs">
+      <DependentUpon>201909282058262_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909282133413_CreateGigTable.cs" />
+    <Compile Include="Migrations\201909282133413_CreateGigTable.Designer.cs">
+      <DependentUpon>201909282133413_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909282148317_OverrideConventionsForGigsAndGenres.cs" />
+    <Compile Include="Migrations\201909282148317_OverrideConventionsForGigsAndGenres.Designer.cs">
+      <DependentUpon>201909282148317_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909282155191_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201909282155191_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201909282155191_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910102211472_AddForeignKeyPropertiestoGig.cs" />
+    <Compile Include="Migrations\201910102211472_AddForeignKeyPropertiestoGig.Designer.cs">
+      <DependentUpon>201910102211472_AddForeignKeyPropertiestoGig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ViewModels\GigFormViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -244,7 +265,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -258,6 +278,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909282058262_InitialModel.resx">
+      <DependentUpon>201909282058262_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909282133413_CreateGigTable.resx">
+      <DependentUpon>201909282133413_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909282148317_OverrideConventionsForGigsAndGenres.resx">
+      <DependentUpon>201909282148317_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909282155191_PopulateGenresTable.resx">
+      <DependentUpon>201909282155191_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910102211472_AddForeignKeyPropertiestoGig.resx">
+      <DependentUpon>201910102211472_AddForeignKeyPropertiestoGig.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
