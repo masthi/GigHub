@@ -1,8 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using GigHub.Models;
 using System.Web.Mvc;
-using Antlr.Runtime.Misc;
 using GigHub.ViewModels;
 using Microsoft.AspNet.Identity;
 
